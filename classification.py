@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv(r"C:\Users\Aadesh\OneDrive\Desktop\PONGAL\dynamic_pricing.csv")
+data = pd.read_csv(r"C:\Users\Aadesh\OneDrive\Desktop\AI\dynamic_pricing.csv")
 
 def categorize_cost(cost):
     if cost < data['Historical_Cost_of_Ride'].quantile(0.33):
